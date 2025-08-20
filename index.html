@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>همهٔ شبکه‌های ما در یک صفحه</title>
+  <meta name="description" content="با یک کلیک به واتساپ، تلگرام و سایر صفحات اجتماعی ما بپیوندید."/>
+  <style>
+    :root{
+      --bg: #0b0d10;
+      --card: #11151a;
+      --muted: #9aa4af;
+      --text: #eaf0f7;
+      --brand:#22c55e;
+      --brand-2:#38bdf8;
+      --ring: rgba(56,189,248,.35);
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f7fafc; --card:#ffffff; --muted:#5b6876; --text:#0b1220; --ring:rgba(34,197,94,.25) }
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(1200px 600px at 85% -10%, rgba(56,189,248,.25), transparent 60%),radial-gradient(1000px 500px at -10% 110%, rgba(34,197,94,.18), transparent 60%), var(--bg);color:var(--text);font-family:"Vazirmatn", system-ui, -apple-system, Segoe UI, Roboto, Tahoma, Arial;}
+    .wrap{max-width:880px;margin-inline:auto;padding:32px;}
+    header{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center;margin-top:8px}
+    .logo{width:72px;height:72px;border-radius:20px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(0,0,0,.25)}
+    .logo span{font-weight:800;font-size:28px;color:#001016}
+    h1{margin:0 0 6px 0;font-size:28px}
+    p.lead{margin:0;color:var(--muted)}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);backdrop-filter: blur(6px); border-radius:24px;padding:20px; box-shadow:0 8px 30px rgba(0,0,0,.18)}
+    .grid{display:grid;gap:14px}
+    @media (min-width:720px){ .grid{grid-template-columns:1fr 1fr} }
+
+    .btn{display:flex;align-items:center;gap:12px;text-decoration:none;background:var(--card);border:1px solid rgba(255,255,255,.08);padding:14px 16px;border-radius:16px;transition:.2s;position:relative;overflow:hidden}
+    .btn:hover{transform:translateY(-2px); box-shadow:0 12px 30px rgba(56,189,248,.1)}
+    .btn:focus{outline:2px solid var(--ring)}
+    .btn small{color:var(--muted)}
+    .btn strong{font-size:16px}
+    .btn svg{flex:0 0 24px}
+    .badge{position:absolute;left:12px;top:12px;font-size:11px;padding:2px 8px;border-radius:999px;background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.25)}
+
+    .qr{display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center}
+    @media (max-width:560px){ .qr{grid-template-columns:1fr} }
+    .qr img{width:160px;height:160px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:var(--card)}
+    .muted{color:var(--muted)}
+    footer{margin:28px 0 8px 0;color:var(--muted);font-size:13px;text-align:center}
+    .copy{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:12px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true"><span>AF</span></div>
+      <div>
+        <h1>به شبکه‌های اجتماعی ما خوش آمدید</h1>
+        <p class="lead">با یک صفحه، هرجا که خواستید جوین شوید — واتساپ، تلگرام، فیسبوک، اینستاگرام و بیشتر.</p>
+      </div>
+    </header>
+
+    <section class="card" style="margin-top:18px">
+      <div class="grid">
+        <!-- واتساپ -->
+        <a class="btn" href="https://chat.whatsapp.com/REPLACE_WHATSAPP_INVITE" target="_blank" rel="noopener">
+          <span class="badge">گروه</span>
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.91 11.91 0 0 0 12 0 12 12 0 0 0 0 12a11.86 11.86 0 0 0 1.64 6.06L0 24l6.12-1.6A12 12 0 0 0 24 12a11.9 11.9 0 0 0-3.48-8.52ZM12 22a10 10 0 0 1-5.1-1.39l-.36-.21-3 .79.8-2.93-.23-.38A10 10 0 1 1 22 12 10 10 0 0 1 12 22Zm5-7.42c-.28-.14-1.64-.8-1.89-.89s-.44-.14-.63.14-.72.89-.89 1.08-.33.21-.61.07a8.08 8.08 0 0 1-2.38-1.47 9 9 0 0 1-1.67-2c-.17-.28 0-.43.13-.57s.28-.33.42-.5a1.87 1.87 0 0 0 .28-.47.52.52 0 0 0 0-.5c0-.14-.61-1.47-.83-2s-.44-.46-.61-.47h-.52a1 1 0 0 0-.72.34A3 3 0 0 0 6 9.38 5.21 5.21 0 0 0 7.11 12a11.87 11.87 0 0 0 4.53 4.53c.56.25 1 .4 1.34.51a3.22 3.22 0 0 0 1.48.09 2.41 2.41 0 0 0 1.59-1.11 2 2 0 0 0 .14-1.11c-.07-.14-.25-.21-.53-.35Z"/></svg>
+          <div>
+            <strong>واتساپ</strong>
+            <small>عضویت در گروه WhatsApp</small>
+          </div>
+        </a>
+        <!-- تلگرام -->
+        <a class="btn" href="https://t.me/REPLACE_TELEGRAM_INVITE" target="_blank" rel="noopener">
+          <span class="badge">کانال</span>
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M9.03 15.44 8.9 19.9c.39 0 .56-.17.76-.37l1.83-1.77 3.79 2.78c.69.39 1.19.19 1.38-.64l2.51-11.77h.01c.22-1.03-.37-1.44-1.04-1.19L3.1 10.17c-1 .39-.98.95-.17 1.19l4.62 1.44 10.74-6.57c.51-.34.98-.15.59.19z"/></svg>
+          <div>
+            <strong>تلگرام</strong>
+            <small>عضویت در کانال Telegram</small>
+          </div>
+        </a>
+        <!-- اینستاگرام -->
+        <a class="btn" href="https://instagram.com/REPLACE_INSTAGRAM_USERNAME" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3z"/><path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2.2A2.8 2.8 0 1 0 12 15.8 2.8 2.8 0 0 0 12 9.2Z"/><circle cx="17.5" cy="6.5" r="1.2"/></svg>
+          <div>
+            <strong>اینستاگرام</strong>
+            <small>مشاهده صفحه Instagram</small>
+          </div>
+        </a>
+        <!-- فیسبوک -->
+        <a class="btn" href="https://facebook.com/REPLACE_FACEBOOK_PAGE" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M13 22v-9h3l1-4h-4V6.5A1.5 1.5 0 0 1 14.5 5H17V1h-2.5A5.5 5.5 0 0 0 9 6.5V9H6v4h3v9z"/></svg>
+          <div>
+            <strong>فیسبوک</strong>
+            <small>بازدید از Facebook</small>
+          </div>
+        </a>
+        <!-- یوتیوب -->
+        <a class="btn" href="https://youtube.com/@REPLACE_YOUTUBE_HANDLE" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12c0 1.9.2 3.8.5 5.8a3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1c.3-2 .5-3.9.5-5.8 0-1.9-.2-3.8-.5-5.8zM9.7 15.6V8.4L15.8 12z"/></svg>
+          <div>
+            <strong>یوتیوب</strong>
+            <small>مشاهده کانال YouTube</small>
+          </div>
+        </a>
+        <!-- تیک‌تاک -->
+        <a class="btn" href="https://www.tiktok.com/@REPLACE_TIKTOK" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M16.8 1.8a6.7 6.7 0 0 0 3.8 3.8 8.7 8.7 0 0 0 2.4.5v3a11.4 11.4 0 0 1-6.2-1.9v7.6a6 6 0 1 1-6-6c.3 0 .6 0 .9.1v3a3 3 0 1 0 2.1 2.9V0h3v1.8z"/></svg>
+          <div>
+            <strong>تیک‌تاک</strong>
+            <small>مشاهده پروفایل TikTok</small>
+          </div>
+        </a>
+        <!-- وبسایت -->
+        <a class="btn" href="https://REPLACE_WEBSITE_URL" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2c1.9 0 3.6.7 5 1.8a18 18 0 0 1-5 1.5A18 18 0 0 1 7 5.8 8 8 0 0 1 12 4Zm-8 8c0-.3 0-.7.1-1 2.2 1 4.9 1.6 7.9 1.6s5.7-.6 7.9-1.6c.1.3.1.7.1 1s0 .7-.1 1c-2.2-1-4.9-1.6-7.9-1.6S6.3 12 4.1 13c-.1-.3-.1-.7-.1-1Zm3 5.2a18 18 0 0 1 5-1.5c1.8.3 3.5.8 5 1.5A8 8 0 0 1 12 20a8 8 0 0 1-5-1.8Z"/></svg>
+          <div>
+            <strong>وب‌سایت</strong>
+            <small>بازدید از وب‌سایت رسمی</small>
+          </div>
+        </a>
+        <!-- ایمیل -->
+        <a class="btn" href="mailto:REPLACE_EMAIL_ADDRESS" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.2l-10 6.2L2 6.2zm0 3.1 9.4 5.8a1 1 0 0 0 1.2 0L22 9.1V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/></svg>
+          <div>
+            <strong>ایمیل</strong>
+            <small>ارتباط مستقیم</small>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <div class="qr">
+        <img id="qr" alt="QR این صفحه" />
+        <div>
+          <h3 style="margin:0 0 8px 0">QR کد همین صفحه</h3>
+          <p class="muted" style="margin:0 0 12px 0">این QR را چاپ کنید یا در پوسترهای تبلیغاتی قرار دهید تا افراد وارد همین صفحه شوند و شبکه مورد نظرشان را انتخاب کنند.</p>
+          <div class="copy" id="copyBtn" title="کپی آدرس صفحه">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v12h2V3h12z"/><path d="M20 5H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m0 2v14H8V7z"/></svg>
+            <span id="copyText">کپی لینک صفحه</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> همه حقوق محفوظ است.</div>
+    </footer>
+  </div>
+
+  <script>
+    // مقداردهی لینک‌ها: این‌ها را با لینک واقعی خودتان جایگزین کنید
+    // مثال واتساپ: https://chat.whatsapp.com/XXXXXXXXXXXXXXX
+    // مثال تلگرام کانال/گروه: https://t.me/your_channel یا لینک دعوت خصوصی
+
+    // تولید خودکار QR برای URL فعلی صفحه (از یک API رایگان تصویر QR)
+    function setQR(){
+      var url = window.location.href.split('#')[0];
+      // اگر فایل را لوکال باز کرده‌اید، می‌توانید به‌صورت دستی آدرس نهایی هاست‌شده را وارد کنید
+      var qrsrc = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=' + encodeURIComponent(url);
+      var img = document.getElementById('qr');
+      img.src = qrsrc;
+    }
+
+    // کپی لینک صفحه
+    function enableCopy(){
+      var btn = document.getElementById('copyBtn');
+      var txt = document.getElementById('copyText');
+      btn.addEventListener('click', async function(){
+        try{
+          await navigator.clipboard.writeText(window.location.href.split('#')[0]);
+          txt.textContent = 'کپی شد!';
+          setTimeout(()=>{ txt.textContent = 'کپی لینک صفحه'; }, 1500);
+        }catch(e){
+          txt.textContent = 'کپی نشد';
+          setTimeout(()=>{ txt.textContent = 'کپی لینک صفحه'; }, 1500);
+        }
+      });
+    }
+
+    // سال فوتر
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    setQR();
+    enableCopy();
+  </script>
+</body>
+</html>
